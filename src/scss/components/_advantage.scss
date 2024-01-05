@@ -1,0 +1,111 @@
+/*
+
+
+.advantage__list {
+}
+.advantage__item {
+}
+.advantage__item-title {
+}
+.advantage__item-text {
+}
+
+*/
+.advantage {
+  padding: var(--p-top-section) 0;
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 168.75%;
+    text-transform: uppercase;
+    margin-bottom: clamp(2.5rem, 1.786rem + 2.232vw, 5rem);
+    position: relative;
+    display: inline-block;
+    padding-left: 26px;
+    &::after {
+      content: "";
+      width: 17px;
+      height: 1px;
+      background-color: var(--light-color);
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+  }
+  &__desc {
+    max-width: 50rem;
+    color: var(--light-color);
+    font-size: var(--title-font-size);
+    font-weight: 700;
+    line-height: 100%;
+    padding-bottom: var(--p-bottom-desc);
+    & span {
+      color: var(--accent-color);
+    }
+  }
+  &__list {
+    display: grid;
+    gap: 3.2rem 2.1rem;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 28rem);
+    @media (min-width: 911px) and (max-width: 1212px) {
+      grid-template-columns: repeat(auto-fit, 38rem);
+    }
+  }
+  &__item {
+    padding: 13.5rem 4.7rem 4.7rem 4.7rem;
+    border-radius: 1.5rem;
+    background-color: var(--third-dark);
+    max-width: 32rem;
+    position: relative;
+    &::after {
+      content: "";
+      width: 4.8rem;
+      height: 4.8rem;
+      position: absolute;
+      top: 4.8rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-repeat: no-repeat;
+    }
+    &:nth-child(1)::after {
+      background-image: url(./../img/svg/person.svg);
+    }
+    &:nth-child(2)::after {
+      background-image: url(./../img/svg/dumbbell.svg);
+    }
+    &:nth-child(3)::after {
+      background-image: url(./../img/svg/plane.svg);
+    }
+    &:nth-child(4)::after {
+      background-image: url(./../img/svg/formula.svg);
+    }
+    &::before {
+      content: "";
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 5px solid var(--accent-color);
+    }
+  }
+
+  &__item-title {
+    color: var(--light-color);
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 3.4rem;
+  }
+  &__item-text {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 129.412%;
+  }
+}

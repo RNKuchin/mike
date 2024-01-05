@@ -1,4 +1,5 @@
 // базовые подключения
+@import "vendor";
 @import "vars";
 @import "mixins";
 @import "fonts";
@@ -7,6 +8,7 @@
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/hero";
+@import "./components/advantage";
 
 
 // тестовые стили, удалите их

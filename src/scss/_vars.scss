@@ -7,11 +7,14 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  --title-font-size:clamp(3rem,  10 * (1vw + 1vh) / 2, 9rem);
+  --title-font-size: clamp(3rem, 10 * (1vw + 1vh) / 2, 9rem);
+  --p-bottom-desc: clamp(3.2rem, 2.057rem + 3.571vw, 7.2rem);
   // colors
-  --text-color:#BCBDBF;
+  --text-color: #bcbdbf;
   --light-color: #fff;
   --second-dark: #545454;
-  --bg-page:#1C1C1A;
-  --accent-color:#247894;
+  --third-dark: #232321;
+  --bg-page: #1c1c1a;
+  --accent-color: #247894;
+  --p-top-section: clamp(4.5rem, 3.214rem + 4.018vw, 9rem);
 }
