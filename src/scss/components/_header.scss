@@ -1,0 +1,71 @@
+@import "nav";
+@import "btn";
+.header {
+  width: 100%;
+  padding-top: clamp(2.5rem,  10 * (1vw + 1vh) / 2, 5.7rem);
+  position: absolute;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: clamp(16rem, 10 * (1vw + 1vh) / 2, 25rem);
+    height: auto;
+  }
+}
+
+.nav__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.burger {
+  display: none;
+}
+
+@media (max-width: 1110px) {
+  .nav__header {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    right: 15px;
+    &__line {
+      display: block;
+      position: relative;
+      width: 22px;
+      height: 2px;
+      background-color: var(--accent-color);
+      transform: translate(40%);
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: inherit;
+      }
+      &::before {
+        bottom: 5px;
+        transform: translate(-50%);
+      }
+      &::after {
+        bottom: -5px;
+        transform: translate(-50%);
+      }
+    }
+  }
+}

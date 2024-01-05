@@ -1,0 +1,23 @@
+.btn {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  &--big {
+    padding: 20px 70px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 70%; /* 70% */
+    text-transform: uppercase;
+  }
+  &--light {
+    background-color: var(--light-color);
+    color: var(--accent-color);
+    &:hover,
+    &:active {
+      background-color: var(--accent-color);
+      color: var(--light-color);
+      opacity: 0.75;
+
+    }
+  }
+}
