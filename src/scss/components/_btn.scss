@@ -2,6 +2,20 @@
   border-radius: 8px;
   cursor: pointer;
   transition: ease-in 0.2s;
+
+  color: var(--light-color);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 70%; /* 70% */
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+  padding: 2rem 4rem;
+  display: inline-block;
+  &:hover,
+  &:active {
+    opacity: 0.75;
+  }
+
   &--big {
     padding: 20px 70px;
     font-size: 20px;
