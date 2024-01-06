@@ -1,1 +1,2 @@
-console.log('components');
+// import Swiper from "swiper" './components/swiper'
+

@@ -1,5 +1,6 @@
 // базовые подключения
 @import "reset";
+// @import "vendor";
 @import "vars";
 @import "mixins";
 @import "fonts";
@@ -13,3 +14,4 @@
 @import "./components/included";
 @import "./components/article-included";
 @import "./components/program-looks";
+@import "./components/reviews";

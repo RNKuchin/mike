@@ -1,0 +1,35 @@
+.reviews {
+  padding: var(--p-top-section) 0;
+  // &__wrapper {
+  //   display: flex;
+  //   gap: 3rem;
+  // }
+  &__flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: repeat(auto-fill, clamp(28rem, 18.857rem + 28.571vw, 60rem));
+    // grid-template-columns: repeat(auto-fill, clamp(28rem, 24.426rem + 12.766vw, 40rem));
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    @media (max-width:1160px) {
+      grid-template-columns: repeat(auto-fill, clamp(15rem, 3.864rem + 39.773vw, 50rem));
+      // justify-content: center;
+    }
+    @media (max-width:768px) {
+      // grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fill, clamp(28rem, 15.377rem + 45.082vw, 50rem));
+      justify-content: center;
+    }
+  }
+  &__text {
+    max-width: 50rem;
+  }
+  &__slider{
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    position: relative;
+  }
+}
