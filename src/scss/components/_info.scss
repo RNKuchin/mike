@@ -1,0 +1,85 @@
+.info {
+  padding: var(--p-top-section) 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 12rem);
+    gap: clamp(10rem, 9.407rem + 1.852vw, 12rem)
+      clamp(4.4rem, 2.148rem + 7.037vw, 12rem);
+    justify-items: center;
+    justify-content: center;
+    padding-top: 12rem;
+    padding-bottom: var(--p-top-section);
+    border-bottom: 1px solid var(--second-dark);
+  }
+
+  .info__icon {
+    position: relative;
+    width: 12rem;
+    min-height: 12rem;
+    margin-bottom: 1.8rem;
+    border-radius: 15px;
+    background: var(--third-dark);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 7.8rem;
+      border-bottom: 2px solid var(--accent-color);
+      z-index: 1;
+    }
+  }
+  &__text {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 110%;
+    text-align: center;
+    display: block;
+  }
+}
+
+
+.info__item{
+  &:nth-child(1)  .info__icon {
+    background-image: url(./../img/svg/height.svg);
+  }
+  &:nth-child(2)  .info__icon {
+    background-image: url(./../../img/svg/weight.svg);
+  }
+  &:nth-child(3)  .info__icon {
+    background-image: url(./../../img/svg/age.svg);
+  }
+  &:nth-child(4)  .info__icon {
+    background-image: url(./../../img/svg/calendar.svg);
+  }
+  &:nth-child(5)  .info__icon {
+    background-image: url(./../../img/svg/runer.svg);
+  }
+  &:nth-child(6)  .info__icon {
+    background-image: url(./../../img/svg/knee.svg);
+  }
+  &:nth-child(7)  .info__icon {
+    background-image: url(./../../img/svg/biceps.svg);
+  }
+  &:nth-child(8)  .info__icon {
+    background-image: url(./../../img/svg/Goal.svg);
+  }
+  &:nth-child(9)  .info__icon {
+    background-image: url(./../../img/svg/dumbbell-2.svg);
+  }
+  &:nth-child(10)  .info__icon {
+    background-image: url(./../../img/svg/foto.svg);
+  }
+  &:nth-child(11)  .info__icon {
+    background-image: url(./../../img/svg/instagram.svg);
+  }
+  &:nth-child(12)  .info__icon {
+    background-image: url(./../../img/svg/foto.svg);
+  }
+}

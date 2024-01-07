@@ -1,0 +1,45 @@
+.steps {
+  padding: var(--p-top-section) 0;
+  &__container {
+    padding: 14rem 2.5rem 9rem 2.5rem;
+    background-color: var(--third-dark);
+    border-radius: 15px;
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    &::after {
+      content: "";
+      border-bottom: 5px solid var(--accent-color);
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24rem);
+    gap: 9rem;
+    justify-content: center;
+  }
+  &__item {
+    color: var(--light-color);
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 120%;
+    position: relative;
+    &::after {
+      content: "01";
+      position: absolute;
+      top: -5.4rem;
+
+      color: var(--accent-color);
+      font-size: 3.4rem;
+      font-weight: 700;
+      line-height: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--accent-color);
+    }
+  }
+}

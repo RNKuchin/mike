@@ -59,6 +59,8 @@
     background-position: center;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
     &--prev {
       left: 0;
       background-image: url(./../img/svg/btn-active-right.svg);
@@ -77,6 +79,13 @@
         background-image: url(../../img/svg/btn-disable-left.svg);
         transform: rotate(180deg);
       }
+      &:hover{
+        opacity: 1;
+        cursor: unset;
+      }
+    }
+    &:hover{
+      opacity: 0.7;
     }
   }
 }

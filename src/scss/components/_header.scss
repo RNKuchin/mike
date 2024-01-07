@@ -9,10 +9,6 @@
     display: flex;
     align-items: center;
   }
-  &__logo {
-    width: clamp(16rem, 10 * (1vw + 1vh) / 2, 25rem);
-    height: auto;
-  }
 }
 
 .nav__header {
