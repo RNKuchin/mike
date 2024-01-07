@@ -1,18 +1,23 @@
 <header class="header">
   <div class="container header__container">
     <a href="#" class="logo header__logo">
-      <img src="./img/logo.png" srcset="./img/logo.webp" type="image/webp" alt="Логотип сайта Mike Boreyko"></a>
+      <picture>
+        <source type="image/webp" srcset="./img/logo.webp" />
+        <img src="./img/logo.png" srcset="./img/logo.webp" type="image/webp" alt="Логотип сайта Mike Boreyko">
+    </a>
+    </picture>
     <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
       <span class="burger__line"></span>
     </button>
     <nav class="nav nav__header">
+      <li class="nav__item active"><a href="#">Преимущества</a></li>
       <ul class="nav__list">
-        <li class="nav__item active"><a href="#">Преимущества</a></li>
-        <li class="nav__item"><a href="#">Программа</a></li>
-        <li class="nav__item"><a href="#">Как выглядит</a></li>
-        <li class="nav__item"><a href="#">Отзывы</a></li>
-        <li class="nav__item"><a href="#">Заказать</a></li>
-        <li class="nav__item"><a href="#">Стоимость</a></li>
+        <li class="nav__item"><a href="#advantage" aria-label="Перейти к разделу программа.">Программа</a></li>
+        <li class="nav__item"><a href="#program-looks" aria-label="Перейти к визуальному описанию программы.">Как
+            выглядит</a></li>
+        <li class="nav__item"><a href="#reviews" aria-label="Перейти к отзывам.">Отзывы</a></li>
+        <li class="nav__item"><a href="#" aria-label="Перейти к разделу заказать.">Заказать</a></li>
+        <li class="nav__item"><a href="#" aria-label="Перейти к разделу стоимости.">Стоимость</a></li>
       </ul>
       <ul class="nav__list-link">
         <li class="nav__item-link btn btn--big btn--light"><a href="#"></a>Заказать</li>
