@@ -29,6 +29,7 @@
     font-weight: 700;
     line-height: 120%;
     position: relative;
+
     &::after {
       content: "01";
       position: absolute;
@@ -40,6 +41,15 @@
       line-height: 100%;
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--accent-color);
+    }
+    &:nth-child(2)::after {
+      content: "02";
+    }
+    &:nth-child(3)::after {
+      content: "03";
+    }
+    &:nth-child(4)::after {
+      content: "04";
     }
   }
 }
