@@ -4,7 +4,7 @@
   //   display: flex;
   //   gap: 3rem;
   // }
-  &__flex{
+  &__flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
     // grid-template-columns: repeat(auto-fill, clamp(28rem, 18.857rem + 28.571vw, 60rem));
@@ -13,23 +13,67 @@
     justify-content: space-between;
     align-items: center;
     justify-items: center;
-    @media (max-width:1160px) {
-      grid-template-columns: repeat(auto-fill, clamp(15rem, 3.864rem + 39.773vw, 50rem));
+    @media (max-width: 1160px) {
+      grid-template-columns: repeat(
+        auto-fill,
+        clamp(15rem, 3.864rem + 39.773vw, 50rem)
+      );
       // justify-content: center;
     }
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       // grid-template-columns: 1fr;
-      grid-template-columns: repeat(auto-fill, clamp(28rem, 15.377rem + 45.082vw, 50rem));
+      grid-template-columns: repeat(
+        auto-fill,
+        clamp(28rem, 15.377rem + 45.082vw, 50rem)
+      );
       justify-content: center;
     }
   }
   &__text {
     max-width: 50rem;
   }
-  &__slider{
-    width: 100%;
-    max-width: 50rem;
-    height: auto;
-    position: relative;
+}
+
+.slider {
+  width: 100%;
+  max-width: 50rem;
+
+  &__wrapper {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  &__btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    z-index: 1000;
+    background-color: var(--accent-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 8px;
+    &--prev {
+      left: 0;
+      background-image: url(./../img/svg/btn-active-right.svg);
+      transform: rotate(180deg);
+    }
+    &--next {
+      right: 0;
+      background-image: url(./../img/svg/btn-active-right.svg);
+    }
+    &.swiper-button-disabled {
+      background-color: var(--text-color);
+      &--prev {
+        background-image: url(../../img/svg/btn-disable-left.svg);
+      }
+      &--next {
+        background-image: url(../../img/svg/btn-disable-left.svg);
+        transform: rotate(180deg);
+      }
+    }
   }
 }
