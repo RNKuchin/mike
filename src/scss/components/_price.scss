@@ -1,0 +1,49 @@
+.price {
+  padding: var(--p-top-section) 0;
+  background-image: url(./../img/bg-bottom.png);
+  background-image: url(./../img/bg-bottom.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  &__content {
+    padding: 6.5rem 5rem;
+    border-radius: 3rem;
+    background-color: var(--accent-color);
+    max-width: 50.3rem;
+    margin-bottom: 30rem;
+  }
+  &__content-title {
+    color: var(--light-color);
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 117.647%;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    color: var(--light-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 112.5%;
+    margin-bottom: 4.3rem;
+  }
+  &__number {
+    border-bottom: 1px solid #6aceef;
+    margin-bottom: 3rem;
+    & p {
+      color: #fff;
+      font-size: 90px;
+      font-weight: 700;
+      line-height: 50%;
+      margin-bottom: 3rem;
+    }
+    & p > span {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 20px; /* 52.632% */
+      text-transform: uppercase;
+      position: relative;
+      top: -4.5rem;
+      left: 1rem;
+    }
+  }
+}
