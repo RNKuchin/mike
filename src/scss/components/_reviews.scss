@@ -32,11 +32,14 @@
   &__text {
     max-width: 50rem;
   }
+  &__slider{
+    width: 100%;
+    max-width: 50rem;
+  }
 }
 
 .slider {
   width: 100%;
-  max-width: 50rem;
 
   &__wrapper {
     position: absolute;
