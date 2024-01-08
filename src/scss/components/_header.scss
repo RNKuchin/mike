@@ -26,9 +26,13 @@
   }
 }
 @media (max-width: 768px) {
-  .nav {
-    display: none;
+  .logo{
+    max-width: 200px;
   }
+  .header{
+    padding-top: 60px;
+  }
+
   .burger {
     display: block;
     width: 40px;
@@ -36,9 +40,11 @@
     border-radius: 5px;
     background-color: #fff;
     position: absolute;
-    top: 80%;
+    top: 80px;
     transform: translateY(-50%);
     right: 15px;
+    z-index: 999;
+
     &__line {
       display: block;
       position: relative;
@@ -53,6 +59,7 @@
         width: 22px;
         height: 2px;
         background-color: inherit;
+        transition: all ease-in 0.3s;
       }
       &::before {
         bottom: 5px;
@@ -61,6 +68,23 @@
       &::after {
         bottom: -5px;
         transform: translate(-50%);
+      }
+    }
+    &.open{
+      .burger__line {
+        background-color: transparent;
+        &::before,
+        &::after {
+          background-color: var(--accent-color);
+          bottom: 0;
+        }
+
+        &::before {
+          transform: translate(-50%) rotate(45deg);
+        }
+        &::after {
+          transform: translate(-50%) rotate(-45deg);
+        }
       }
     }
   }
