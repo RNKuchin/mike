@@ -6,11 +6,17 @@
   background-size: cover;
   background-position: top center;
   &__content {
+    display: flex;
+    flex-direction: column;
     padding: 6.5rem 5rem;
     border-radius: 3rem;
     background-color: var(--accent-color);
     max-width: 50.3rem;
     margin-bottom: 30rem;
+    & .btn:hover {
+      background-color: var(--light-color);
+      color: var(--accent-color);
+    }
   }
   &__content-title {
     color: var(--light-color);

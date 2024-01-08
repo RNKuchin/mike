@@ -38,7 +38,7 @@
     line-height: normal;
   }
   @media (max-width: 1100px) {
-    &__item-link {
+    ul &__item-link{
       display: none;
     }
   }
