@@ -29,6 +29,9 @@
     font-weight: 700;
     line-height: 120%;
     position: relative;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
 
     &::after {
       content: "01";

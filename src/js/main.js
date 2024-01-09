@@ -14,9 +14,10 @@ const navMenu = (
   const toggleFunc = () => {
     burger.classList.toggle(classOpen);
     nav.classList.toggle(classOpen);
-    page.style.cssText = burger.classList.contains("open")
-      ? "overflow:hidden;"
-      : "overflow:auto;";
+    page.classList.toggle("dis-scroll");
+    // page.style.cssText = burger.classList.contains("open")
+    //   ? "overflow:hidden;"
+    //   : "overflow:auto;";
   };
 
   burger.addEventListener("click", () => {
