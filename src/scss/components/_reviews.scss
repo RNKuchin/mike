@@ -32,7 +32,7 @@
   &__text {
     max-width: 50rem;
   }
-  &__slider{
+  &__slider {
     width: 100%;
     max-width: 50rem;
   }
@@ -72,19 +72,19 @@
     }
     &.swiper-button-disabled {
       background-color: var(--text-color);
-      &--prev {
-        background-image: url(../../img/svg/btn-disable-left.svg);
-      }
-      &--next {
-        background-image: url(../../img/svg/btn-disable-left.svg);
-        transform: rotate(180deg);
-      }
-      &:hover{
+      // &--prev {
+      //   background-image: url(../../img/svg/btn-disable-left.svg);
+      // }
+      // &--next {
+      //   background-image: url(../../img/svg/btn-disable-left.svg);
+      //   transform: rotate(180deg);
+      // }
+      &:hover {
         opacity: 1;
         cursor: unset;
       }
     }
-    &:hover{
+    &:hover {
       opacity: 0.7;
     }
   }

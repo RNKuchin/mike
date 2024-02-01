@@ -1,6 +1,4 @@
-// import "./_functions";
-import Swiper from "swiper";
-import { Navigation } from "swiper";
+import Swiper, { Navigation } from "swiper";
 
 const navMenu = (
   burgerSelector = ".burger",
@@ -15,9 +13,7 @@ const navMenu = (
     burger.classList.toggle(classOpen);
     nav.classList.toggle(classOpen);
     page.classList.toggle("dis-scroll");
-    // page.style.cssText = burger.classList.contains("open")
-    //   ? "overflow:hidden;"
-    //   : "overflow:auto;";
+    page.style.cssText = burger.classList.contains("open");
   };
 
   burger.addEventListener("click", () => {

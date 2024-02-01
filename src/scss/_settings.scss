@@ -37,11 +37,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
-}
-
-.is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  overflow: hidden;
 }
 
 .btn-reset {
@@ -49,27 +45,6 @@ a {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-}
-
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.input-reset {
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
-
-  &::-webkit-search-decoration,
-  &::-webkit-search-cancel-button,
-  &::-webkit-search-results-button,
-  &::-webkit-search-results-decoration {
-    display: none;
-  }
 }
 
 .visually-hidden {
@@ -89,14 +64,6 @@ a {
   max-width: var(--container-width);
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-
-.centered {
-  text-align: center;
-}
-
 .dis-scroll {
   position: fixed;
   left: 0;
@@ -107,13 +74,9 @@ a {
   overscroll-behavior: none;
   @media (min-width: 769px) {
     overflow: auto;
-    overscroll-behavior:unset;
+    overscroll-behavior: unset;
     position: static;
   }
-}
-
-.page--ios .dis-scroll {
-  position: relative;
 }
 
 .title {

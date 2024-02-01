@@ -1,4 +1,13 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
 @include font-face("BebasNeuePro", "../fonts/BebasNeuePro-Bold", 700, normal);
-@include font-face("BebasNeuePro", "../fonts/BebasNeuePro-ExpandedExtraBold", 800, normal);
-@include font-face("BebasNeuePro", "../fonts/BebasNeuePro-Regular", 400, normal);
+@include font-face(
+  "BebasNeuePro",
+  "../fonts/BebasNeuePro-ExpandedExtraBold",
+  800,
+  normal
+);
+@include font-face(
+  "BebasNeuePro",
+  "../fonts/BebasNeuePro-Regular",
+  400,
+  normal
+);
